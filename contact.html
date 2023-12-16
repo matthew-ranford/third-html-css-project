@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- Remove table from below and just have <divs>, use Flexbox and make the Nav-bar with @media for responsiveness 05/02 -->
+    <div id="Container">
+      <div class="Contact">
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="Services">
+        <a href="services.html">Services</a>
+      </div>
+      <div class="Gallery">
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div class="Main-Header">The Green<br />Zone</div>
+      <div class="Logo">
+        <a href="index.html"
+          ><img
+            src="images/GreenhouseLogo.jpg"
+            alt="Greenhouse Logo"
+            height="85"
+            width="85"
+        /></a>
+      </div>
+    </div>
+
+    <!-- Re-create 'Main-content Section' and use @media for responsiveness 05/02 -->
+    <div id="Container-Body">
+      <div class="Header">Contact Us!</div>
+
+      <div class="Main-P">
+        Need Greenhouse advice?<br />
+        <br />
+        Need Greenhouse products?<br />
+        <br />
+        Not sure where to start?<br />
+        <br />
+        Give us a shout, We'll be glad to assist!
+      </div>
+
+      <div class="Email">
+        Reach out to us at:<br />
+        <a href="Greenhouse@GreenhouseGuy.com">Greenhouse@GreenhouseGuy.com</a>
+      </div>
+
+      <div class="Form">
+        <form action="" method="get">
+          <h5>Your Name</h5>
+          <input required type="text" placeholder="Name (Required)" />
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h5>Your Email Address</h5>
+          <input required type="email" placeholder="Email Address (Required)" />
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h5>Your Phone Number</h5>
+          <input required type="text" placeholder="Number (Required)" />
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h5>Write to Us</h5>
+          <textarea placeholder="Your Enquiry" cols="25" rows="15"></textarea>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <button required type="submit">Submit Information</button>
+          <br />
+          <br />
+          <button type="reset">Reset Info</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="Footer">
+      Monday - Friday <br />
+      7am - 3pm <br />
+      <h6>&copy;2023 GreenhouseGuy</h6>
+    </div>
+  </body>
+</html>

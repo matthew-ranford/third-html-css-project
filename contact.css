@@ -1,0 +1,325 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  max-width: 100%;
+  height: 1250px;
+  background-image: linear-gradient(
+      215deg,
+      rgba(0, 0, 0, 1.2) 0%,
+      rgba(0, 0, 0, 0.5) 40%
+    ),
+    url('images/Greenhouse3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* text-align: left; */
+  overflow: none;
+  /* color: beige; */
+}
+
+@media (max-width: 1350px) {
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 100%;
+    height: auto;
+    background-image: linear-gradient(
+        215deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.5) 40%
+      ),
+      url('images/Greenhouse3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* text-align: left; */
+    overflow: none;
+    color: beige;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#Container {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-basis: 100%;
+  /* padding: 10px; */
+  /* margin-left: 30px; */
+}
+
+@media (max-width: 800px) {
+  #Container {
+    flex-basis: 100%;
+    /* border-right: 0; */
+  }
+}
+
+.Logo img {
+  border: 10px;
+  background-color: green;
+  border-radius: 0 50% 0 50%;
+  box-shadow: 1px 1px 5px rgb(0, 255, 55);
+  padding: 5px;
+}
+
+.Logo {
+  transform: translate(82px, -3px);
+  overflow: hidden;
+}
+
+.Main-Header {
+  flex-basis: 22%;
+  text-align: right;
+  /* border: 1px solid black; */
+  transform: translate(83px, -2px);
+  font-size: 30px;
+  color: rgb(0, 255, 55);
+  text-shadow: 5px 5px 2px black;
+}
+
+.Contact {
+  flex-basis: 22%;
+  /* border: 1px solid black; */
+  text-align: right;
+  font-size: 30px;
+  text-shadow: 5px 5px 2px black;
+}
+
+.Services {
+  flex-basis: 22%;
+  /* border: 1px solid black; */
+  text-align: right;
+  font-size: 30px;
+  text-shadow: 5px 5px 2px black;
+}
+
+.Gallery {
+  flex-basis: 22%;
+  /* border: 1px solid black; */
+  text-align: right;
+  font-size: 30px;
+  text-shadow: 5px 5px 2px black;
+}
+
+@media (max-width: 1350px) {
+  .Contact,
+  .Services,
+  .Gallery {
+    flex-basis: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1350px) {
+  .Contact {
+    margin-bottom: 10px;
+    transform: translate(0px, 70px);
+  }
+}
+
+@media (max-width: 1350px) {
+  .Services {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    transform: translate(0px, 70px);
+  }
+}
+
+@media (max-width: 1350px) {
+  .Gallery {
+    margin-top: 5px;
+    margin-bottom: 35px;
+    transform: translate(0px, 70px);
+  }
+}
+
+@media (max-width: 1350px) {
+  .Main-Header {
+    flex-basis: 100%;
+    text-align: right;
+    padding-right: 65px;
+    transform: translate(-20px, -185px);
+    /* width: 50%; */
+  }
+}
+
+@media (max-width: 1350px) {
+  .Logo {
+    flex-basis: 100%;
+    text-align: right;
+    transform: translate(0px, -245px);
+    /* width: 50%; */
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 255, 55);
+}
+
+a:hover {
+  color: rgba(0, 255, 55, 0.486);
+}
+
+#Container-Body {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+  margin-top: 50px;
+  height: 1000px;
+}
+
+.Header {
+  /* border: 1px solid black; */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+  font-size: 70px;
+  color: rgb(0, 255, 55);
+  text-shadow: 5px 5px 2px black;
+}
+
+.Main-P {
+  /* border: 1px solid black; */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 40px;
+  color: beige;
+}
+
+.Email {
+  /* border: 1px solid black; */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 40px;
+  color: beige;
+}
+
+.Form {
+  /* border: 1px solid black; */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: left;
+  transform: translate(75px, -342px);
+  margin-bottom: 30px;
+}
+
+.Form h5 {
+  transform: translate(0px, -65px);
+  font-size: 20px;
+  color: rgb(0, 255, 55);
+  margin-top: 30px;
+  text-shadow: 5px 5px 2px black;
+}
+
+input[type='text'] {
+  width: 200px;
+  height: 40px;
+  color: beige;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transform: translate(0px, -50px);
+  border-color: rgb(0, 255, 55);
+}
+
+input[type='email'] {
+  width: 200px;
+  height: 40px;
+  color: beige;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transform: translate(0px, -50px);
+  border-color: rgb(0, 255, 55);
+}
+
+textarea[placeholder='Your Enquiry'] {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  color: beige;
+  background-color: black;
+  transform: translate(0px, -50px);
+  border-color: rgb(0, 255, 55);
+}
+
+button {
+  color: beige;
+  background-color: rgb(0, 255, 55);
+  border: 2px solid rgb(0, 255, 55);
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 1s, padding 0.5s;
+  padding: 10px 25px;
+  transform: translate(0px, -50px);
+
+  /* margin-top: 5%; */
+}
+
+button:hover {
+  background-color: black;
+}
+
+@media (max-width: 1350px) {
+  #Container-Body {
+    /* display: block;
+    transform: translate(15px, -10px); */
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+    margin-top: 50px;
+    height: 1200px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .Header,
+  .Main-P,
+  .Email {
+    display: grid;
+    transform: translate(15px, -10px);
+  }
+}
+
+@media (max-width: 1350px) {
+  .Form {
+    display: grid;
+    /* text-align: left; */
+    /* transform: translate(0px, -500px); */
+  }
+}
+
+#Footer {
+  text-align: right;
+  color: rgb(0, 255, 55);
+  text-shadow: 0.15em 0.15em 0.1em #2f4f4f;
+  /* transform: translate(0px, -120px); */
+}
+
+#Footer h6 {
+  text-align: right;
+  color: rgb(0, 255, 55);
+  text-shadow: 0.15em 0.15em 0.1em #2f4f4f;
+  font-size: 10px;
+}
+
+@media (max-width: 1350px) {
+  #Footer,
+  #Footer h6 {
+    display: grid;
+    text-align: right;
+    /* transform: translate(0px, -500px); */
+  }
+}

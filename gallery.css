@@ -1,0 +1,271 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  max-width: 100%;
+  height: auto;
+  background-image: linear-gradient(
+      215deg,
+      rgba(0, 0, 0, 1.2) 0%,
+      rgba(0, 0, 0, 0.5) 40%
+    ),
+    url('images/Greenhouse3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* text-align: left; */
+  overflow: none;
+  /* color: beige; */
+}
+
+@media (max-width: 1350px) {
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 100%;
+    height: auto;
+    background-image: linear-gradient(
+        215deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.5) 40%
+      ),
+      url('images/Greenhouse3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* text-align: left; */
+    overflow: none;
+    color: beige;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#Container {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-basis: 100%;
+  /* padding: 10px; */
+  /* margin-left: 30px; */
+}
+
+@media (max-width: 800px) {
+  #Container {
+    flex-basis: 100%;
+    /* border-right: 0; */
+  }
+}
+
+.Logo img {
+  border: 10px;
+  background-color: green;
+  border-radius: 0 50% 0 50%;
+  box-shadow: 1px 1px 5px rgb(0, 255, 55);
+  padding: 5px;
+}
+
+.Logo {
+  transform: translate(82px, -3px);
+  overflow: hidden;
+}
+
+.Main-Header {
+  flex-basis: 22%;
+  text-align: right;
+  /* border: 1px solid black; */
+  transform: translate(83px, -2px);
+  font-size: 30px;
+  color: rgb(0, 255, 55);
+  text-shadow: 5px 5px 2px black;
+}
+
+.Contact {
+  flex-basis: 22%;
+  /* border: 1px solid black; */
+  text-align: right;
+  font-size: 30px;
+  text-shadow: 5px 5px 2px black;
+}
+
+.Services {
+  flex-basis: 22%;
+  /* border: 1px solid black; */
+  text-align: right;
+  font-size: 30px;
+  text-shadow: 5px 5px 2px black;
+}
+
+.Gallery {
+  flex-basis: 22%;
+  /* border: 1px solid black; */
+  text-align: right;
+  font-size: 30px;
+  text-shadow: 5px 5px 2px black;
+}
+
+@media (max-width: 1350px) {
+  .Contact,
+  .Services,
+  .Gallery {
+    flex-basis: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1350px) {
+  .Contact {
+    margin-bottom: 10px;
+    transform: translate(0px, 70px);
+  }
+}
+
+@media (max-width: 1350px) {
+  .Services {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    transform: translate(0px, 70px);
+  }
+}
+
+@media (max-width: 1350px) {
+  .Gallery {
+    margin-top: 5px;
+    margin-bottom: 35px;
+    transform: translate(0px, 70px);
+  }
+}
+
+@media (max-width: 1350px) {
+  .Main-Header {
+    flex-basis: 100%;
+    text-align: right;
+    padding-right: 65px;
+    transform: translate(-20px, -185px);
+    /* width: 50%; */
+  }
+}
+
+@media (max-width: 1350px) {
+  .Logo {
+    flex-basis: 100%;
+    text-align: right;
+    transform: translate(0px, -245px);
+    /* width: 50%; */
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 255, 55);
+}
+
+a:hover {
+  color: rgba(0, 255, 55, 0.486);
+}
+
+#Images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-basis: 100%;
+}
+
+#Images img {
+  height: 400px;
+  width: 400px;
+}
+
+.Image1,
+.Image4,
+.Image7 {
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-left: 50px;
+}
+
+.Image2,
+.Image5,
+.Image8 {
+  margin-top: 25px;
+  margin-right: 15px;
+}
+
+.Image3,
+.Image6,
+.Image9 {
+  margin-top: 25px;
+}
+
+@media (max-width: 1350px) {
+  #Images {
+    display: flex;
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 2200px) {
+  #Images img {
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@media (min-width: 836px) (max-width: 1349px) {
+  #Images img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 835px) {
+  #Images img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 435px) {
+  #Images img {
+    height: 100px;
+    width: 100px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .Image1,
+  .Image2,
+  .Image3,
+  .Image4,
+  .Image5,
+  .Image6,
+  .Image7,
+  .Image8,
+  .Image9 {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+#Footer {
+  text-align: right;
+  color: rgb(0, 255, 55);
+  text-shadow: 0.15em 0.15em 0.1em #2f4f4f;
+  margin-top: 15px;
+  /* transform: translate(0px, -120px); */
+}
+
+#Footer h6 {
+  text-align: right;
+  color: rgb(0, 255, 55);
+  text-shadow: 0.15em 0.15em 0.1em #2f4f4f;
+  font-size: 10px;
+}
+
+@media (max-width: 1350px) {
+  #Footer,
+  #Footer h6 {
+    display: grid;
+    text-align: right;
+    /* transform: translate(0px, -500px); */
+  }
+}
